@@ -4,18 +4,20 @@
     bottom: 0;
     right: 0;
     box-sizing: border-box;
-    color: gray;
+    /* color: gray; */
 }
 
 body {
     /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: black;
+    color: gray;
+
 
 }
 
 .cmn-effect {
-    padding-top: 80px;
+    margin-top: 5rem;
 }
 
 nav {
@@ -64,13 +66,16 @@ a {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 2.7rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
 
 h1,
 h3 {
-    color: black;
+    /* color: black; */
+    color: #181c31;
+
     width: fit-content;
 }
 p{
@@ -84,13 +89,19 @@ hr{
 .nav-links {
     padding: 1.5vw;
     font-weight: 550;
+    color: #666;
 }
 
 .nav-links:hover {
     color: rgb(21, 76, 139);
     transition: 1.2s ease;
 }
+#main-con {
+    /* border: solid; */
+    margin: 0rem .5rem;
 
+
+}
 #main-page {
     /* display: flex;
     flex-wrap: wrap;
@@ -117,6 +128,7 @@ hr{
 
     
 }
+
 
 #cmp-info-con {
     width: 60%;
@@ -239,6 +251,8 @@ hr{
 #app-ss-con {
     text-align: center;
     padding: 0vw 10vw;
+    background: linear-gradient(to right,white,white, white,rgb(220,224,240));
+
 
 }
 
@@ -246,26 +260,34 @@ hr{
 
 #app-ss-con p,
 #best-features-head p  {
-    font-size: 20px;
-}
+    font-size: 1.2rem;
+    font-weight: 400;
 
+}
+#app-ss-con p{
+    padding: 0rem 8rem;
+    margin-top: -1rem;
+    
+}
 .ss-header {
     justify-items: center;
+    color: #314259;
+
 }
 
 #app-ss {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 7vw;
+    justify-content:space-around;
+    gap: 3rem;
     margin-top: 5vw;
 
 }
 
 #app-ss img {
     border-radius: 1vw;
-    width: 20vw;
-    height: 80vh;
+    width: 17rem;
 }
 
 #best-features-con {
@@ -279,10 +301,14 @@ hr{
 }
 
 #feat-cards-con {
-    margin-top: 10vw;
+    margin-top: 5rem;
     align-content: center;
-    border-radius: 2vw;
-    padding-left: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border: solid;
+    border-radius: 1rem;
+    padding: 3rem 3rem;
     /* box-shadow: -.5px -.5px 2px; */
         box-shadow: 0px 1px 5px rgba(45, 74, 170, 0.14);
 
@@ -293,21 +319,17 @@ hr{
     flex-wrap: wrap;
     flex-direction: row;
     /* columns:3; */
-    margin-top: 2vw;
-    padding-top: 2vw;
+    padding-top: 2rem;
     padding-bottom: 2vw;
     gap: 3vw;
+    position: relative;
 }
 
 .feat-icons {
-    /* font-size: 5vw; */
     background: rgb(233, 235, 244);
-    border-radius: 1vw;
+    border-radius: 1.5rem;
     width: fit-content;
-    padding: 20px;
-    
-
-
+    padding: 1.4rem;
 }
 
 
@@ -316,13 +338,13 @@ svg {
     height: auto;
     
 }
-/* .feat-icons:hover{
+.feat-icons:hover, svg:hover{
     background: rgb(56, 69, 155);
     color: white;
     border-radius: 1vw;
     transition: 1.5s ease;
     cursor: pointer;
-} */
+}
 
 
 .feat-cards-items {
@@ -330,10 +352,15 @@ svg {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    position: relative;
     /* justify-content: center; */
     /* justify-items: center; */
 }
 
+/* .feat-cards-items-p{
+    font-size: .5rem;
+} */
 #about-app-con1 {
     display: flex;
     flex-direction: row;
@@ -343,6 +370,8 @@ svg {
     padding-right: 4vw; */
     padding: 1vw 5vw;
     align-items: center;
+    background: linear-gradient(to right,white,white, white,rgb(220,224,240));
+
 }
 
 /* #about-app-con1 img {
@@ -408,6 +437,7 @@ ul{
 
 #work-process-head{
     justify-items: center;
+    text-align: center;
     margin-left: 20vw;
     margin-right: 20vw;
 
@@ -415,6 +445,10 @@ ul{
 
 #custom-con{
     justify-items: center;
+}
+#custom-con img{
+    width: 100%;
+    height: auto;
 }
 #dwn-con{
     padding-top: 7vw;
@@ -432,6 +466,7 @@ ul{
     background: rgba(56, 69, 155, 0.9);
     border-radius: 1vw;
     
+    
 }
 #download-banner-left{
     width: 50%;
@@ -446,7 +481,7 @@ ul{
     display: flex;
     flex-direction: row;
     gap: 1vw;
-    margin-top: 1vw;
+    /* margin-top: 1vw; */
 }
 #download-banner-left img{
     width: 12vw;
@@ -640,10 +675,86 @@ ul{
     
 
 }
-
-svg{
-    font-size: 60rem;
+#about-app-con2 {
+    display: flex;
+    flex-direction: row;
+padding: 7rem 0rem;
+    align-items: center;
+    /* background: linear-gradient(to right, white, white, white, rgb(220, 224, 240)); */
 }
+#work-process-con{
+    padding-top: 4.5rem;
+}
+#work-process-head p{
+color: #314259;
+font-size: 1.2rem;
+margin-top: -1rem;
+padding: 0rem 1rem;
+font-family: "Poppins", sans-serif;
+}
+.feat-cards-items-p{
+    color: #314259;
+    font-size: 1rem;
+        font-family: "Poppins", sans-serif;
+
+}
+#connect{
+    position: absolute;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 20%;
+    margin-top: -13rem;
+}
+/* #feat-cards > div{
+border: solid;  
+} */
+
+.dwn-right-img1 {
+    width: 17.5rem;
+    padding-top: 1rem;
+}
+
+.dwn-right-img2 {
+    width: 17rem;
+    padding-top: 4.2rem;
+}
+
+.dwn-right-img21 {
+    display: none;
+}
+
+.dwn-right-img12 {
+    display: none;
+
+}
+.feat-cards-items-h3{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media only screen and (max-width: 480px) {
@@ -651,6 +762,12 @@ svg{
 
     section{
         width: 100%;
+    }
+    nav{
+        border: solid;
+    }
+    p{
+        color: #314259;
     }
     #custom-con img{
         width: 90vw;
@@ -686,8 +803,8 @@ svg{
     .feat-cards-items {
         margin-top: 50px;
         width: 100%;
-        padding-left: 10vw;
-        padding-right: 10vw;
+        padding: 0rem 1rem;
+
     }
 
     #best-features-head {
@@ -698,10 +815,10 @@ svg{
         flex-direction: column;
     }
 
-    #app-ss img {
-        width: 45vw;
-        height: 80vw;
-        border-radius: 2vw;
+        #app-ss img {
+        width: 18rem;
+        height: auto;
+        border-radius: 1.5rem;
     }
 
     #nav-links-items {
@@ -711,10 +828,15 @@ svg{
     #about-app-con1{
         flex-direction: column;
         width: 100%;
+        background: white;
     }
 
     #download-banner-con{
         flex-direction: column;
+        border-radius: 1rem;
+        padding: 0vw .2rem;
+    text-align: center;
+    margin: 0rem .3rem;
     }
 
     #form-con input,#form-con textarea {
@@ -748,6 +870,7 @@ svg{
 }
 #main-page{
     /* height: fit-content; */
+    
 }
 #app-download-link {
     /* flex-direction: column; */
@@ -763,4 +886,180 @@ svg{
 #app-features div{
     width: 100%;
 }
+.cmn-effect {
+    margin-top: 2.4rem;
+}
+#app-ss-con {
+    text-align: center;
+    padding: 0vw 10vw;
+    background: white;
+    padding: 0rem;
+}
+#app-ss-con h1{
+    font-size: 2rem;
+}
+#app-ss-con p ,  #best-features-head p{
+    padding: 0rem .3rem;
+    margin-top: -1rem;
+    font-size: 1.4rem;
+}
+#best-features-head p{
+    padding: 0rem .5rem;
+    font-size: 1.4rem;
+}
+h1 {
+        font-size: 1.7rem;
+        margin: 4rem 0rem;
+        text-align: center;
+    }
+#feat-cards-con {
+    border-radius: 2rem;
+    padding-left: 0rem;
+    padding-bottom: 6rem;
+}
+.feat-icons {
+    /* font-size: 5vw; */
+    background: rgb(233, 235, 244);
+    border-radius: 1.5rem;
+}
+.icons{
+    border-radius: 1.5rem;
+
+}
+.feat-icons:hover, svg:hover {
+    border-radius: 1.5rem;
+    transition: 1.5s ease;
+    cursor: pointer;
+}
+
+#about-app-con1 {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem .5rem;
+}
+#about-app-con1 img{
+    width: 20rem;
+}
+#about-app-con1-right {
+    width: 100%;
+}
+#about-app-con1-right p {
+    font-size: 1.35rem;
+    padding: 2rem 0rem;
+}
+#about-app-con2-left {
+    width: 100%;
+}
+#about-app-con2 {
+    display: flex;
+    flex-direction: column-reverse;
+padding: 7rem 0rem;
+    align-items: center;
+    /* background: linear-gradient(to right, white, white, white, rgb(220, 224, 240)); */
+}
+#about-app-con2-left h3{
+    font-size: 1.4rem;
+    color: #314259;
+    padding: 0rem 1rem;
+    text-align: left;
+}
+#about-app-con2-left li {
+    font-size: 1.2rem;
+    text-align: left;
+}
+#work-process-head {
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#work-process-head h1{
+    /* margin-top: 4rem; */
+    margin: 0rem;
+}
+    #work-process-head p {
+        padding: 0rem 0.9rem;
+        font-size: 1.2rem;
+        margin-top: 0rem;
+    }
+#work-process-con{
+    padding-top: 4rem;
+}
+#connect{
+    display: none;
+}
+#custom-con{
+    margin-top: 8rem;
+}
+#download-banner-left {
+    width: 100%;
+    justify-items: center;
+}
+#dwn-lwr-con{
+    margin-top: 3rem;
+}
+#download-banner-right {
+    /* width: 100%; */
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+#download-banner-left h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 0rem .5rem; */
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    
+}
+#download-banner-left p{
+    padding: 0rem .5rem;
+    font-size: 1.3rem;
+}
+#download-banner-con {
+    
+}
+#download-banner-left img {
+    width: 10rem;
+}
+#download-banner-right img {
+    width: 18rem;
+    padding: 0rem .5rem;
+}
+ .dwn-right-img1 {
+        display: none;
+    }
+
+    .dwn-right-img12 {
+        display: inline;
+    }
+
+    .dwn-right-img2 {
+        display: none;
+    }
+
+    .dwn-right-img21 {
+        display: inline;
+    }
+    #test-head {
+    padding: 0rem;
+    }
+#test-con{
+    margin-top: 7rem;
+}
+#test-head p {
+    font-size: 1.2rem;
+        color: #314259;
+        font-weight: 400;
+        padding: 0rem 1rem;
+        margin-top: -3rem;
+    }
+    .feat-cards-items-h3{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 2rem;
+        font-weight: 300;
+    }
 }
