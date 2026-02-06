@@ -22,13 +22,14 @@ body {
 }
 
 nav {
-    position: sticky;
+    position: fixed;
     padding-top: .5vw;
-    margin-top: 5px;
+    /* margin-top: 5px; */
     background-color: rgba(255, 255, 255, 0.9);
     /* padding: 1vw 0vw; */
     z-index: 10000;
     border-color: rgb(121 128 138 / 0.15);
+    height: fit-content;
 
 }
 
@@ -51,6 +52,8 @@ nav {
     /* position: absolute; */
     /* margin-left: 5vw; */
     /* margin-top: 2vw; */
+        font-family: "Nunito Sans", sans-serif;
+
 }
 
 #nav-links-con {
@@ -127,7 +130,7 @@ hr{
     margin-right: auto; */
     /* width: 100%; */
     /* margin-top: 6rem; */
-    margin: 6rem 2rem;
+margin: 10.7rem 1.6rem;
 
 
 
@@ -171,7 +174,7 @@ hr{
     border-radius: 3rem;
         margin-left: auto;
     margin-right: auto;
-    margin: -2.3rem 4.5rem;
+    margin: -1.8rem 4.5rem;
 }
 
 
@@ -192,7 +195,7 @@ hr{
 }
 #wave-svg{
     width: fit-content;
-    margin-top: -10.5rem;
+    margin-top: -11.5rem;
 }
 
 
@@ -265,9 +268,15 @@ hr{
 
 #app-ss-con p,
 #best-features-head p  {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 400;
     color: #314259;
+    
+}
+#best-features-head p  {
+    font-size: 1.2rem;
+    padding: 0rem 0rem;
+    margin: -1rem -1rem;
 
 }
 #app-ss-con p{
@@ -350,10 +359,10 @@ svg {
     height: auto;
     
 }
-.feat-icons:hover, svg:hover{
+.feat-icons:hover{
     background: rgb(56, 69, 155);
     color: white;
-    border-radius: 1vw;
+    border-radius: 1.5rem;
     transition: 1.5s ease;
     cursor: pointer;
 }
@@ -530,6 +539,7 @@ ul{
 #download-banner-left p{
     font-weight: 400;
     font-size: 1.1rem;
+    padding-right: 1rem;
 
 }
 /* #download-banner-left div{
@@ -593,11 +603,14 @@ ul{
 #test-card p{
     color: black;
     padding-bottom: 2rem;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #314259;
 
 }
 .test-card-img{
-    width: 5vw;
-    height: 5vw;
+    width: 3vw;
+    height: 3vw;
     border-radius: 100%;
 }
 #test-card-lwr{
@@ -614,7 +627,7 @@ ul{
 }
 #test-card-lwr-left{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     float: left;
 }
 #test-card-lwr-left div{
@@ -641,13 +654,11 @@ ul{
 #contact-form-head h1{
     margin-top: 1rem;
 }
-#contact-form-head p{
+#contact-form-head p {
     font-size: 1.2rem;
     font-weight: 400;
     color: #314259;
     margin-top: -.6rem;
-
-
 }
 #captcha-text p{
     font-size: 1rem;
@@ -744,41 +755,57 @@ ul{
     text-align: center;
     background: rgb(40,54,147);
     color: white;
-    /* margin: 0vw -10vw -2vw -1vw; */
+    /* margin: 0rem -1rem; */
+    /* margin-left: -1rem;
+    margin-right: -1rem; */
     position: relative;
     width: 100%;
-    margin-left: -1vw;
-    margin-bottom: -2vw;
+    /* margin-left: -1vw; */
+    padding: 0rem 1rem;
+    margin: 0rem 0rem;
 }
 #footer-con p{
     color: white;
 }
 
-#what-icon{
+.what-icon{
+    
     background: rgba(30, 170, 81, 0.90);
     width: fit-content;
     border-radius: 100%;
-    padding: .5vw;
+    padding: .7rem;
     height: fit-content;
     width: fit-content;
     position: fixed;
-    /* justify-self: end; */
-    justify-self: right;
-    align-self:self-end;
-    margin-right: 1vw;
-    margin-bottom: 1vw;
+    justify-self: end;    
+    /*
+    */
+    margin-right: 2rem;
+     margin-bottom: 6rem; 
+    position: absolute;
+    animation: upDown 3s infinite ease;
+    align-self: last baseline;
+    /* display: flex; */
+    /* float: right; */
+    
 
 }
 .icon{
     color: rgb(255, 255, 255,.90);
 }
-#what-icon:hover{
+.what-icon:hover{
     background: rgb(30, 170, 81);
     color: white;
     cursor: pointer;
 }
-#what-icon{
-    animation: upDown 3s infinite ease;
+ #what-icon{
+    /* animation: upDown 3s infinite ease; */
+    float: right;
+    /* position:fixed; */
+    width: fit-content;
+   /* display: flex; */
+
+
 }
 
 
@@ -851,6 +878,7 @@ ul{
         gap: 3rem;
         /* justify-content: space-between; */
         margin-top: 1rem;
+        padding-bottom:4.5rem;
     }
 
 
@@ -909,6 +937,14 @@ ul{
     }
 
 
+#footer-con {
+    text-align: center;
+    width: 100%;
+    /* margin-bottom: -1rem; */
+    /* border: solid; */
+
+    background: rgb(40 54 147);
+}
 
 
 
@@ -1005,6 +1041,15 @@ border: solid;
     padding-top: 1rem;
 }
 
+#FAQs-con p{
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: black;
+}
+button p:nth-of-type(odd) {
+    color: #666;
+    font-weight: 900;
+}
 #FAQs-con {
     text-align: center;
     justify-items: center;
@@ -1055,6 +1100,9 @@ border: solid;
     font-weight: 600;
     color: #283693;
 }
+#about-app-con1-left img{
+    width: 20rem;
+}
 
 
 
@@ -1075,9 +1123,17 @@ border: solid;
 
 
 
+footer{
+    /* margin-bottom: -10rem; */
+    margin: -.5rem -.5rem;
 
-
-
+}
+#footer-con p {
+    color: white;
+    margin: 0rem;
+    padding: .5rem 0rem;
+    font-weight: 400;
+}
 
 
 
@@ -1089,6 +1145,9 @@ border: solid;
     }
     nav{
         /* border: solid; */
+        margin-top: .3rem;
+        justify-self: center;
+        /* color: rgba(24 28 49); */
     }
     p{
         color: #314259;
@@ -1180,15 +1239,18 @@ border: solid;
     position: relative;
 }
     .cmp-vid {
-        width: 20rem;
+        width: 17rem;
         margin: -1.3rem 1.5rem;
+        margin: 2rem 3rem;
     }
 .main-page-h1{
     font-size: 1.8rem;
     margin-right: 0rem;
+    text-align: left;
+            margin: 1rem 0rem;
 }
 #cmp-info-con{
-    margin-top: 5rem;
+    margin-top: 9rem;
     /* border: solid; */
     height: 42rem;
 }
@@ -1201,7 +1263,7 @@ border: solid;
         gap: 1rem;
 }
 #app-download-link img {
-    width: 11rem;
+    width: 10rem;
 }
 #app-features {
     flex-direction: column;
@@ -1416,6 +1478,61 @@ padding: 7rem 0rem;
         width: 100%;
         gap: 0rem;
     }
+    #contact-form-head {
+        padding: 0rem;
+    }
+    #contact-form-con{
+        margin-top: 1rem;
+    }
+    .footer{
+        padding: 4rem 0.5rem;
+    }
+    #footer-con {
+        padding-top: 0.1rem;
+    padding-bottom: .1rem;
+    }
+    #dimond-svg {
+    width: fit-content;
+    float: right;
+    margin-top: 1rem;
+    position: absolute;
+    justify-self: end;
+}
+svg {
+    width: 17.3vw;
+    height: auto;
+}
+#wave-svg {
+    width: fit-content;
+    margin-top: -16.5rem;
+    margin-left: -1rem;
+    z-index: 1;
+}
+#footer-con p {
+    color: white;
+    margin: 0rem;
+}
+#about-app-con1-left img{
+
+}
+.what-icon{
+    margin-bottom: 6rem;
+    margin-right: 1rem;
+}
+#nav-links-con {
+display:block;
+}
+#navBar{
+    gap: 8rem;
+}
+#form-con {
+    width: 100%;
+    flex-direction: column;
+    justify-items: center;
+    flex-wrap: nowrap;
+    /* justify-self: center; */
+    /* align-self: center; */
+}
 }
 
 /* justify-content:;
